@@ -9,6 +9,6 @@ var Hello = React.createClass({
   }
 });
 ReactDOM.render(
-  <HelloWorld/>,
+  <Hello/>,
   document.getElementById('app')
 );
