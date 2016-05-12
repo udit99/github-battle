@@ -12,9 +12,17 @@ var BattleContainer = React.createClass({
     }
 
   },
+  componentDidMount: function(){
+    var query = this.props.location.query;
+    console.log('Query', query);
+    //TODO Fetchinfo from github
+  },
   render: function(){
     return (
-      <Battle/>
+      <Battle
+        isLoading={this.state.isLoading}
+        playerInfo={this.state.playerInfo}
+      />
     )
   }
 })
