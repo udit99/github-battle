@@ -17,7 +17,7 @@ var Routes = (
       <IndexRoute component={Home} />
       <Route path='playerOne' header="Player One" component={PromptContainer} />
       <Route path='playerTwo/:playerOne' header="Player Two"  component={PromptContainer} />
-      <Route path='battle' header="Player Two"  component={BattleContainer} />
+      <Route path='battle' component={BattleContainer} />
     </Route>
   </Router>
 )

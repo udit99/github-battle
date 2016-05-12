@@ -3,7 +3,7 @@ var Battle = require("../components/Battle.js");
 
 var BattleContainer = React.createClass({
   contextTypes: {
-    router: React.PropTypes.func.isRequired
+    router: React.PropTypes.object.isRequired
   },
   getInitialState: function(){
     return {
@@ -13,7 +13,6 @@ var BattleContainer = React.createClass({
 
   },
   render: function(){
-    debugger;
     return (
       <Battle/>
     )
