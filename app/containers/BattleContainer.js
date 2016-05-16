@@ -1,5 +1,6 @@
 var React = require("react");
 var Battle = require("../components/Battle.js");
+var githubHelpers = require('../utils/githubHelpers');
 
 var BattleContainer = React.createClass({
   contextTypes: {
@@ -14,8 +15,7 @@ var BattleContainer = React.createClass({
   },
   componentDidMount: function(){
     var query = this.props.location.query;
-    console.log('Query', query);
-    //TODO Fetchinfo from github
+    githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
   },
   render: function(){
     return (
