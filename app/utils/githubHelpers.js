@@ -10,7 +10,9 @@ var helpers = {
     return axios.all(players.map(function(username){
       return getUserInfo(username);
     })).then(function(info){
-      console.log(info);
+      return info.map(function(user){
+        return user.data;
+      })
     })
 
   }

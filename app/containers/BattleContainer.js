@@ -15,7 +15,9 @@ var BattleContainer = React.createClass({
   },
   componentDidMount: function(){
     var query = this.props.location.query;
-    githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
+    githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo]).then(function(players){
+      console.log('Players', players);
+    })
   },
   render: function(){
     return (
