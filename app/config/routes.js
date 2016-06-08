@@ -10,7 +10,6 @@ var PromptContainer = require("../containers/PromptContainer");
 var BattleContainer = require("../containers/BattleContainer");
 var ResultsContainer = require("../containers/ResultsContainer");
 
-
 var Routes = (
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
